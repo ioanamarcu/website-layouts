@@ -1,0 +1,148 @@
+	position: absolute;
+	top: 949px;
+	left: 	630px;
+
+	position: absolute;
+	top: 96%;
+	left: 47%;
+
+
+#section-1 .container header .hero-content-wrapper > .mini-circle{	/* ESTE OK????*/
+	width: 7px;
+	height: 7px;
+	background: #e74c3c;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 35px 0;
+	position: relative;
+}
+
+#section-1 .container header .hero-content-wrapper > .mini-circle:before{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	background: #fff;
+}
+
+#section-1 .container header .hero-content-wrapper > .mini-circle:after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	left: 20px;
+	background: #fff;
+}
+
+#section-6 .content-wrapper .mini-circle{
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background: #e74c3c;
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+}
+
+#section-6 .content-wrapper .mini-circle:before{     /*PE*/
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	background: #999999;
+}
+
+#section-6 .content-wrapper .mini-circle:after{     /*PE*/
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	left: 20px;
+	background: #999999;
+}
+
+
+#section-8 .content-wrapper .mini-circle{	/* cerculetul rosu */
+	width: 7px;
+	height: 7px;
+	background: #e74c3c;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 15px 0;
+	position: relative;
+}
+
+#section-8 .mini-circle:before{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	background: #999999;
+}
+
+#section-8 .mini-circle:after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80px;
+	position: absolute;
+	top: 3px;
+	left: 20px;
+	background: #999999;
+}
+/* Set rules to fill background */
+  min-height: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  	
+  /* Set up positioning */
+  position: absolute;
+  top: 70px;
+}
+
+
+ min-height: 100%;    /* ca sa apara pe toata sectiunea cat e de inalta */
+  width: 100%;			/* sa apara proportiile latimii pe toata sectiunea  */
+  position: absolute;   /* o pozitionam absolut fata de toata sectiunea  */
+  top: 70px;
+  
+  
+left: 50%;
+	top: 50%;		 /*axa x*/  /*axa y*/ 
+	transform: translate(-50%, -50%);
+#section-9 .test img{
+  min-height: 100%;    /* ca sa apara pe toata sectiunea cat e de inalta */
+  width: 100%;			/* sa apara proportiile latimii pe toata sectiunea  */
+  position: absolute;   /* o pozitionam absolut fata de toata sectiunea  */
+  top: 70px;
+}
+
+<div class="team-wrapper">  <!-- mai are rost??? -->
+
+
+#section-9 .container .team-wrapper div{
+	float: left;
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+

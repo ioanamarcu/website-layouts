@@ -1,0 +1,223 @@
+body{
+	margin: 0;
+}
+
+.main-wrapper{
+	min-height: 991px;
+	background-color: #575BDF;
+	overflow: hidden;
+	font-family: "Open sans", sans-serif;
+}
+
+.app-wrapper{
+	width: 480px;
+	margin: 90px auto; 	
+	background-color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.app-header{
+	min-height: 130px;
+	border-bottom: 1px solid #E0E9F1;
+	background-color: #fbfbff;
+	position: relative;
+}
+
+.first-header{
+	overflow: hidden;
+}
+
+.date{
+	float: left;
+	width: 70%;
+	padding: 12px 30px 0;
+	box-sizing: border-box;
+}
+
+.date h1{
+	margin-bottom: 0;
+	color: #6A6DFA;
+ 	font-weight: normal; 
+}
+
+#day-name{
+	font-weight: 600;   
+}
+
+.date p{
+	margin: 0;
+	padding: 12px 6px;
+	color: #C1C2D0;
+	font-size: 20px;
+}
+
+#task-counter{
+	float: right;
+/*	width: 30%;  */
+	padding-top: 46px;
+	margin-right: 30px;
+	color: #B5B6D2;
+	font-size: 20px;   
+}
+
+.no-task-message.invisible{  /* !!! pt a arata sau ascunde mesajul de no task; vezi si JS*/
+	display: none;  
+}
+
+.task,
+.no-task-message{
+	border-bottom: 1px solid #E0E9F1;	
+	overflow: hidden;
+	padding: 15px 0 17px;
+}
+
+.task:first-child, 
+.no-task-message:first-child{
+	padding-top: 45px;
+}
+
+.task .task-checkbox, 
+.no-task-message .task-checkbox{
+	float: left;
+	width: 60px;
+	min-height: 30px;
+}
+
+/*cod adaugat in 04 mai 2016 mai jos */
+
+.task .task-checkbox .custom-checkbox,
+.no-task-message .task-checkbox .custom-checkbox{
+	height: 18px;
+	width: 18px;
+	margin: 20px 0 0 35px;
+	background: url(https://andycrone.com/wp-content/uploads/app-icons.png);
+	cursor: pointer;
+}
+
+.task .task-checkbox .custom-checkbox.checked,
+.no-task-message .task-checkbox .custom-checkbox.checked{   /*am adaugat direct clasa, specificity !!! */
+	background-position: -18px 0 ;  
+	
+ /* exista varianta sa fac asa sa scriu direct, simplu doar clasa dar nu este o practica buna:
+
+.checked{
+	background-position: -18px 0 !important;  
+}
+- o sa pun !important, ca sa suprascrie orice alta valoare anterioara
+ai ambele stari ale checkbox-ului deja desenate, in Photoshop sa zicem
+Si apoi doar aplici pe element, cand un background, cand altul. Si asa va arata in ambele stari, in functie de clasa .checked
+ */
+
+}
+
+.task .task-checkbox input,
+.no-task-message .task-checkbox input{
+/*	margin: 20px 0 0 35px;  */	
+	visibility: hidden;          /*will hide the element, but the element will still take up the space it would if it was fully visible  */  
+} 
+
+.task .task-description,
+.no-task-message .task-description {
+	float: left;
+	width: 306px;
+}
+
+.task .task-description p,
+.no-task-message .task-description p{
+	margin-left: 22px;
+	color: #82829C;
+}
+
+/*adaugat in 5 mai 
+
+.task .task-description p.done{    // mult mai specific decat cel de sus
+	text-decoration: line-through;
+	color: #B5B6D2;
+}
+*/
+
+.task .task-time{
+	float: left;
+	width: 108px;   /* 108*/
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.task .task-time span{
+	color: #B5B6D2;
+	font-size: 14px;
+}
+	
+.add-task{
+	height: 60px;
+	width: 60px;
+	background-color: #FA6667;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold; 
+
+	color: #fff;
+	position: absolute;
+	right: 34px;
+	bottom: -30px;
+	line-height: 60px;  /* atentie!!! e cat div-ul meu  */
+	cursor: pointer;
+}
+
+.remove-task{
+	height: 60px;
+	width: 60px;
+	background-color: #FA6667;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold; 
+	color: #fff;
+	position: absolute;
+	right: 95px;
+	bottom: -30px;
+	line-height: 60px;  /* atentie!!! e cat div-ul meu  */
+	cursor: pointer;
+	display: none;		/*will render the page as though the element does not exist*/
+}
+
+.new-task{
+	padding: 15px 30px 15px;
+	display: none;
+}
+
+.adding-text{
+	display: inline-block;
+}
+
+.button{
+	display: inline-block;
+}
+
+button{	
+	color: #fff;
+	background-color: #FA6667;
+	border: none;
+	padding: 5px 10px;	
+	border-radius: 6px;
+	font-size: 20px;
+	vertical-align: middle;   /* !!!!!!!!  */
+}
+
+.adding-text input{
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 2px solid #FA6667;
+	vertical-align: middle;      /* mai trebuie?  */
+}
+
+.task.active .task-description p{    /* stilizarea p-ului in functie de parinte !!! */ 
+	background-color: #FFC;
+	text-decoration: line-through;
+	color: #B5B6D2;				
+}
+
+ 

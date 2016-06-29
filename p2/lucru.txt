@@ -1,0 +1,94 @@
+css:
+.task-checkbox span {
+    margin-left: 35px;
+    color: maroon;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+html:
+<span>x</span>
+
+background: url(../images.png) 0 0 no-repeat;
+	cursor: pointer;
+
+.checked{
+	background-position: -18px 0 !important;  
+
+ /*o sa pun important, ca sa suprascrie orice alta valoare anterioara
+ai ambele stari ale checkbox-ului deja desenate, in Photoshop sa zicem
+Si apoi doar aplici pe element, cand un background, cand altul. Si asa va arata in ambele stari, in functie de clasa .checked
+ */
+}
+
+
+
+$(".custom-checkbox").on("click", function(){
+		$(this).toggleClass("checked");
+		$(".task .task-description").css("text-decoration", "line-through");
+	});
+
+
+.task .task-description.done{
+	text-decoration: line-through;
+}
+
+
+text-decoration: line-through;
+	color: #B5B6D2;
+
+function displayMonthName() {
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	
+    var today = new Date();
+    var monthNumber = today.getMonth();
+    var currentMonthName = months[monthNumber]; 
+    document.getElementById("month-name").innerHTML = currentMonthName;
+}
+
+displayMonthName(); 
+
+
+#task-counter span{
+	margin-left: 50px;
+	color: #B5B6D2;
+	font-size: 20px;   
+}
+
+
+function displayDay(){
+	var weekDays=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	var today = new Date();
+	var dayNumberOfTheWeek = today.getDay();
+	var currentDayName = weekDays[dayNumberOfTheWeek];
+
+	var dayNumber = today.getDate();
+	var getDayNumber = dayNumber + "th";
+	return currentDayName + ", " + getDayNumber;
+
+	var getDaySuffix = function(num){
+	    var array = ("" + num).split("").reverse(); // E.g. 123 = array("3","2","1")
+
+	    if (array[1] != "1") { // Number is in the teens
+	        switch (array[0]) {
+	            case "1": return num + "st";
+	            case "2": return num + "nd";
+	            case "3": return num + "rd";
+        }
+    }
+
+    return num + "th";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

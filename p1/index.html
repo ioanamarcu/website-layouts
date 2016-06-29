@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Proiect JQuery</title>
+</head>
+<body>
+  <nav>
+    <ul>
+    
+      <li><a id = "hide" href = "https://oscarotero.com/jquery/">hide!</a></li>
+      <li><a id = "show" href = "https://oscarotero.com/jquery/">show!</a></li>
+      <li><a href = "https://www.codecademy.com/learn">mergi la codecademy!</a></li>
+    
+      <!--  FOR LOADING OUT THE CONTENT IN HTML, vezi JS- afisare continut in pagina din surse externe
+      <li><a href="http://localhost/projects/p1/page1.html">Page 1</a></li>
+      <li><a href="http://localhost/projects/p1/page2.html">Page 2</a></li>
+      <li><a href="http://localhost/projects/p1/page3.html">Page 3</a></li>
+      -->
+
+    </ul>
+  </nav>
+  <div id="btnContent">Get content from iframe.html</div>
+  <div id="btnjson">Get content from json file</div>
+  <div id="btnpostajax">Send AJAX content</div>
+  <div id = "output">
+    Output
+  </div>
+  <br><br>
+  <button id = "myButton" class = "btn primary">Click here</button>
+   <button id = "myButton2" class = "btn warning">Click and here</button>
+  <div class = "row">
+    <a href = "https://www.google.com">go to google</a>
+  </div>
+  <ul id = "destinations">
+    <li class="testing">First
+      <ul class ="copii_lui_li" > 
+        <li>primul</li>
+        <li>al doilea</li>          
+      </ul>
+    </li>
+    <li class="slideEffect">Second      
+        <div>some text</div>
+     </li>
+      
+    <li>Third</li>
+    <li>Forth</li>
+  </ul>
+    <p class = "yellow red">some text</p>
+    <p class = "yellow">another text</p>
+    <p class = "yellow red">this is just some more text</p>
+    <img src = "https://i1061.photobucket.com/albums/t480/ericqweinstein/puppy-4_zps63ff5aa8.jpg" />
+    <br/><br/>
+    <input id = "myInput" type = "text" >
+    <input id = "checkbx" type = "checkbox" >
+    <div id = "arrayme">output to array</div>
+    <iframe src= "iFrame/iframe.html" width = 50% height="300" id="myFrame"></iframe>  
+    <hr><hr><hr>
+                
+  <script>
+     
+      // VAR 1 MAI JOS in jQuery
+    /* $(document).ready(function(){ // $ sign imi da acces la element
+        $("*").click(function(){alert("Hello!");});
+      }); */
+ 
+      // VAR 2 MAI JOS in JavaScript
+      /*var myButton = document.getElementById("myButton2"); //asta imi da acces la elementul meu HTML 
+      myButton.addEventListener("click", function(){
+        prompt("Esti asa fumoasa!");
+      }); */      
+            
+    /*  $(document).ready(function(){                                                            $("a[href*='google.com']").click(function(){console.log(this);});
+         
+         $(".btn").on({
+          "click": wasClicked,
+          "mouseover": wasClicked
+         }); 
+                                   
+         function wasClicked(event){
+           console.log(event);
+         }                            
+      });   */
+        
+      $(document).ready(function(){  
+       // $("nav a[href^="'+location.pathname.split('/')[1])+'"] ").addClass('active');
+        console.log(location.pathname.split('/')[1]);   
+            
+    </script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>  
+<script type="text/javascript" src="js/main.js"></script>   
+</body> 
+</html>

@@ -1,0 +1,59 @@
+.btn{
+  font-family: Comic Sans MS;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3EA3E6;
+}
+
+/* a[href*='google.com']{
+  background: red;
+} */
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #888888;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 50px;
+  height: 50 px;
+  width: 100 px;
+  
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 0 10px;
+}
+
+nav a:hover{
+  background-color: #ff66cc !important;
+  text-decoration: line-through;
+}
+
+nav a.active{
+  background: #6699ff;
+  color: #000;
+  font-family: Comic Sans MS;
+  }
+
+.yellow{
+  background: yellow;
+  color: blue;
+}
+
+.red{
+  background:   red;
+}
+
+.copii_lui_li{
+  position: relative;
+  left: 10px;
+}

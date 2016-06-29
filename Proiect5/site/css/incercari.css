@@ -1,0 +1,100 @@
+#section-4{
+	color: #fff;
+	overflow: hidden;
+}
+
+#section-4 .description{
+	background-color: #202020;
+	float: left;
+	width: 50%;
+	padding-top: 130px 0px 130px 0;
+	text-align: right;
+}
+
+#section-4 .ilustration{
+	float: right;
+	width: 50%;
+}
+
+#section-4 .description h3{
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 34px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+#section-4 .description ul li{
+	list-style-type: none;
+}
+
+#section-4 .description ul li h4{
+	font-size: 18px;
+	font-weight: 600;
+	color: #e74c3c;
+	text-transform: uppercase;
+}
+
+#section-4 .description ul li p{
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 14px;
+	color: #999999;
+}
+
+#section-4 .description ul li .image-container{
+	background: #f4f5f9;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px rgba(176,176,176,0.9);
+	position: relative;
+	display: inline-block;
+}
+
+#section-4 .description ul li .image-container img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+box-shadow: 0 0 0 5px rgba(176,176,176,0.3);
+
+
+
+#section-5 .portofolio div div div{
+	position: absolute;
+	top: 250px;
+	left: 45px;
+	width: 100%;
+}
+
+#section-5 .portofolio div div div span{
+	display: block;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+section-2 .container > div .image-container{
+	width: 70px;
+	height: 70px;
+	border: 1px solid #e5e5e5;
+	position: relative;        /*pt ca imaginile sa nu fie centrate*/
+	display: inline-block;    /*centreaza divurile!! fara el pornesc din coltul stanga sus al divului mare. Puteam folosi si margin: 0 auto*/
+	transition: transform 0.2s linear;
+}
+
+#section-2 .container > div .image-container img{
+	position: absolute;
+	left: 50%;
+	top: 50%;		 /*axa x*/  /*axa y*/ 
+	transform: translate(-50%, -50%);          /*propr left si top centreaza imaginile dar incepand din coltul lor stanga sus. Pt asta fol aceasta propr transform 
+	pt. ca le duce 50% din latime in stanga si 50% din height in sus*/
+	transition: transform 0.2s linear;
+}
+
+
+#7f7f7f
+
+
+
